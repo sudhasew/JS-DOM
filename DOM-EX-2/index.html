@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .dropdown {
+      float: right;
+      margin-right: 115px;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 16px;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+    }
+    #numbers {
+      display: none;
+    }
+    #letters {
+      display: block;
+    }
+    .show {
+      display: block;
+    }
+    .hide {
+      display: none;
+    }
+    .mylist {
+      margin: 300em;
+    }
+    .mylist.shown {
+      margin: 2em;
+    }
+    li {
+      list-style: none;
+    }
+    .display {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">Menu</button>
+      <div class="dropdown-content" id="myDropdown">
+        <ul>
+          <li><a id="letter" href="#">Letters</a></li>
+          <li><a id="number" href="#">Numbers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="show" id="letters">
+      A B C D E F H I J K L M N O P Q R S T U V W X Y Z
+    </div>
+    <div id="numbers">1 2 3 4 5 6 7 8 9 10</div>
+    <script src="domex2.js"></script>
+  </body>
+</html>
