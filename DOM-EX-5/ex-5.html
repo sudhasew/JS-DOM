@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Document</title>
+    <style>
+      .tr {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 20px;
+        background-color: lightgray;
+      }
+      div.table-container {
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+      }
+
+      #it {
+        display: flex;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        font-size: 20px;
+        background-color: lightgray;
+      }
+      div.table {
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(4, 80px);
+        margin: auto;
+      }
+      /* .tr.selected {
+        background-color: green;
+      }
+      .tr.afterSelected {
+        background-color: yellow;
+      } */
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <div class="table">
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr" id="it"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+      </div>
+    </div>
+    <script src="ex-5.js"></script>
+  </body>
+</html>
